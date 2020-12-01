@@ -1,0 +1,17 @@
+.news-box{
+    width: 330px;
+    height: 550px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.image{
+    height: 200px;
+}
+img{
+    width: 100%;
+    max-height: 100%;
+}

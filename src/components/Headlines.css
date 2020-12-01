@@ -1,0 +1,12 @@
+.main-page{
+    width: 100%;
+}
+.page__name{
+    margin: 20px 40px;
+}
+.news-outputs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 40px;
+    gap: 25px 0px;
+}
