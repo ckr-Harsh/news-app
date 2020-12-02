@@ -4,18 +4,21 @@ import Navbar from './components/Navbar';
 import Headlines from './components/Headlines';
 import Business from './components/Business';
 import { Route, Switch } from 'react-router-dom';
+import Context from './components/try';
 
 function App() {
   return (
+    <> 
+    <Context> 
     <div className="App">
         <Navbar />
       <Switch>
-          <Route exact path="/" render={ ()=> <Headlines /> }/>
-          <Route path="/business" render={ ()=> <Business /> }/>
+          <Route exact path="/" component={Headlines}/>
+          <Route path="/business" component={Business}/>
       </Switch>
-   
-     
     </div>
+    </Context>
+    </>
   );
 }
 

@@ -8,7 +8,7 @@ const Navbar = () => {
       <nav>
       <div className="logo"><h1>News App</h1></div>
       <div className="links">
-        <Link to="/">Top Headlines</Link>
+        <Link to="/" onClick={()=>console.log('taks')}>Top Headlines</Link>
         <Link to="/business">Business</Link>
         <Link to="/entertainment">Entertainment</Link>
         <Link to="/health">Health</Link>
