@@ -1,16 +1,16 @@
 import React from 'react';
 import './Box.css';
 
-const Box = ({title, urlToImage, author, description}) => {
+const Box = (props) => {
     return (
         <div>
             <div className="news-box">
-                <p>{title}</p>
+                <p>{props.title}</p>
                 <div className="image">
-                    <img src={urlToImage} alt={title}/>
+                    <img src={props.urlToImage} alt={props.title}/>
                 </div>
-                <p>{author}</p>
-                <p>{description}</p>
+                <p>{props.author}</p>
+                <p>{props.description}</p>
                
             </div>
         </div>
