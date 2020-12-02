@@ -23,3 +23,7 @@ a{
     cursor: pointer;
     margin-right: 10px;
 }
+.activeLink{
+    color: yellow;
+    border-bottom: 2px solid red;
+}

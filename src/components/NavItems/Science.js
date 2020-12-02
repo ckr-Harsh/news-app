@@ -11,7 +11,7 @@ function Science() {
     const Science =()=>{
         return(
                 data.map(arr=>(
-                    <Box key={arr.publishedAt}
+                    <Box key={arr.title}
                      title={arr.title}
                      urlToImage={arr.urlToImage} 
                      author={arr.author} 

@@ -15,7 +15,7 @@ function Context(props) {
         Fetching();
         Fetching2();
     },[categ]);
-     console.log(categ);
+
     const Fetching = async ()=>{
              await Axios
              .get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`)
@@ -29,10 +29,9 @@ function Context(props) {
          await Axios
          .get(`https://newsapi.org/v2/top-headlines?country=in&category=${categ}&apiKey=${apiKey}`)
          .then(res=>{
-             console.log(res.data.articles);
              setData(res.data.articles);
          })
-         .then(err=>console.log(err));
+         .catch(err=>console.log(err));
     }
    
     return (
