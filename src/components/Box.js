@@ -6,7 +6,9 @@ const Box = ({title, urlToImage, author, description}) => {
         <div>
             <div className="news-box">
                 <p>{title}</p>
-                <div className="image"><img src={urlToImage} alt={title}/></div>
+                <div className="image">
+                    <img src={urlToImage} alt={title}/>
+                </div>
                 <p>{author}</p>
                 <p>{description}</p>
                
