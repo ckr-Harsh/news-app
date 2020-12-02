@@ -1,17 +1,21 @@
 import React, { createContext, useState,useEffect } from 'react'
 import Axios from 'axios'
 
-
+export const RealData = createContext();
+export const Category = createContext();
 export const Data = createContext();
+
 function Context(props) {
     const [state,setState] = useState([]);
     const apiKey = 'f1b742bf82a24eb384ca2d0ef1fca373';
-    const [categ,setCateg] = useState('business');
+    const [categ,setCateg] = useState('');
+    const [data,setData] = useState([]);
 
     useEffect( ()=>{
         Fetching();
-    },[]);
-     
+        Fetching2();
+    },[categ]);
+     console.log(categ);
     const Fetching = async ()=>{
              await Axios
              .get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`)
@@ -26,15 +30,20 @@ function Context(props) {
          .get(`https://newsapi.org/v2/top-headlines?country=in&category=${categ}&apiKey=${apiKey}`)
          .then(res=>{
              console.log(res.data.articles);
+             setData(res.data.articles);
          })
          .then(err=>console.log(err));
     }
    
     return (
         <>
+        <RealData.Provider value={[data,setData]}>
+        <Category.Provider value={[categ,setCateg]}>
         <Data.Provider value={[state,setState]}>
-            {props.children}
+                 {props.children}
         </Data.Provider>
+        </Category.Provider>
+        </RealData.Provider>
         </>
     )
 }

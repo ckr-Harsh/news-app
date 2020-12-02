@@ -1,7 +1,7 @@
 import React, { useContext} from 'react';
 import './Headlines.css';
-import Box from './Box';
-import {Data} from './try'
+import Box from '../Box'
+import {Data} from '../try'
 
 const Headlines = () => {
     const [state,setState] = useContext(Data);
