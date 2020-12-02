@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import './Navbar.css';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import { Category } from './try';
 
 const Navbar = () => {
@@ -10,13 +10,13 @@ const Navbar = () => {
       <nav>
       <div className="logo"><h1>News App</h1></div>
       <div className="links">
-        <Link to="/" >Top Headlines</Link>
-        <Link to="/business"onClick={()=>setCateg('business')}>Business</Link>
-        <Link to="/entertainment" onClick={()=>setCateg('entertainment')}>Entertainment</Link>
-        <Link to="/health" onClick={()=>setCateg('health')}>Health</Link>
-        <Link to="/science" onClick={()=>setCateg('science')}>Science</Link>
-        <Link to="/sports" onClick={()=>setCateg('sports')}>Sports</Link>
-        <Link to="/technology" onClick={()=>setCateg('technology')}>Technology</Link>
+        <NavLink to="/" exact activeClassName="activeLink">Top Headlines</NavLink>
+        <NavLink to="/business" exact activeClassName="activeLink" onClick={()=>setCateg('business')}>Business</NavLink>
+        <NavLink to="/entertainment" exact activeClassName="activeLink" onClick={()=>setCateg('entertainment')}>Entertainment</NavLink>
+        <NavLink to="/health" exact activeClassName="activeLink" onClick={()=>setCateg('health')}>Health</NavLink>
+        <NavLink to="/science" exact activeClassName="activeLink" onClick={()=>setCateg('science')}>Science</NavLink>
+        <NavLink to="/sports" exact activeClassName="activeLink" onClick={()=>setCateg('sports')}>Sports</NavLink>
+        <NavLink to="/technology" exact activeClassName="activeLink" onClick={()=>setCateg('technology')}>Technology</NavLink>
       </div>
       </nav>
     </div>
