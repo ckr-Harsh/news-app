@@ -2,6 +2,7 @@ import React, { useContext} from 'react';
 import './Headlines.css';
 import Box from '../Box'
 import {Data} from '../try'
+import '../Box.css'
 
 const Headlines = () => {
     const [state,setState] = useContext(Data);
@@ -17,6 +18,7 @@ const Headlines = () => {
                          urlToImage={arr.urlToImage} 
                          author={arr.author} 
                          description={arr.description}
+                         url={arr.url}
                          />
                     ))
                 }
