@@ -1,17 +1,12 @@
-.news-box{
-    width: 330px;
-    height: 550px;
-    border: 1px solid black;
-    border-radius: 6px;
-    padding: 3px;
+.news-outputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 786px) {
+  .news-outputs {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.image{
-    height: 200px;
-}
-img{
-    width: 100%;
-    max-height: 100%;
+    flex-wrap: wrap;
+  }
 }
