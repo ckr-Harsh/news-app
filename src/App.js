@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Navbar from './components/Navbar';
 import Headlines from './components/NavItems/Headlines'
 import Business from './components/NavItems/Business'
@@ -9,13 +8,13 @@ import Science from './components/NavItems/Science'
 import Sports from './components/NavItems/Sports'
 import Technology from './components/NavItems/Technology'
 import { Route, Switch } from 'react-router-dom';
-import Context from './components/try';
+import Context from './components/ContextPage';
 
 function App() {
   return (
     <> 
     <Context> 
-    <div className="App">
+    <div style={{width: '100%'}}>
         <Navbar />
       <Switch>
           <Route exact path="/" component={Headlines}/>

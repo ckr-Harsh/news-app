@@ -1,12 +1,11 @@
 import React, { useContext} from 'react';
 import './Headlines.css';
 import Box from '../Box'
-import {Data} from '../try'
+import {Data} from '../ContextPage'
 import '../Box.css'
 
 const Headlines = () => {
     const [state,setState] = useContext(Data);
-    console.log(state);
     return (
         <div className="main-page">
             <h1 className="page__name">Top-Headlines</h1>

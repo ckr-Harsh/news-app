@@ -7,8 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import * as Mat from '@material-ui/icons'
-import Grid from '@material-ui/core/Grid'
+import * as Mat from '@material-ui/icons';
 
 const useStyles = makeStyles((theme)=>({
   root: {
@@ -39,8 +38,8 @@ const useStyles = makeStyles((theme)=>({
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="img"
-          height="140"
+          alt="IMAGE NOT FOUND"
+          height="200"
           image={props.urlToImage}
           title='News'
         />
@@ -54,7 +53,7 @@ const useStyles = makeStyles((theme)=>({
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Button color={'primary'} fullWidth className={classes.cta}>
+      <Button color={'primary'} fullWidth className={classes.cta} href={props.url} target="_blank">
           Find Out More <Mat.ChevronRightRounded />
         </Button>
       </CardActions>

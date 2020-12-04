@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { RealData } from '../try';
+import { RealData } from '../ContextPage';
 import Box from '../Box'
 import './Headlines.css'
 import '../Box.css'
