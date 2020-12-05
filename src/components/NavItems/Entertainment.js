@@ -1,11 +1,9 @@
 import React, { useContext } from 'react';
 import { RealData } from '../ContextPage';
 import Box from '../Box'
-import './Headlines.css'
-import '../Box.css'
 
 function Entertainment() {
-    const [data,setData]=useContext(RealData);
+    const [data]=useContext(RealData);
     return (
        <> 
        <h1 className="page__name">Entertainment News</h1>

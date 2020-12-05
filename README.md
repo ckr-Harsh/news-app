@@ -1,6 +1,6 @@
 # News App 📰
 
-News App is a responsive [React](http://facebook.github.io/react/index.html) app that utilises React Router [React Router](https://reactrouter.com/) to make this app a Single-Page Application(SPA), loading data via [News API](https://newsapi.org/).
+News App is a responsive [React](http://facebook.github.io/react/index.html) app that utilises [React Router](https://reactrouter.com/) to make this app a Single-Page Application(SPA), loading data via [News API](https://newsapi.org/).
 
 ![screenshot](https://github.com/traptrick/news-app/blob/master/screenshot.PNG)
 
@@ -21,7 +21,7 @@ Key tools used in this React project are:
 
 If you would like to download the code and try it for yourself:
 
-1. Clone the repo: `https://github.com/traptrick/news-app.git`
+1. Clone the repo: `git clone https://github.com/traptrick/news-app.git`
 2. `cd news-app`
 2. Install packages: `npm install`
 3. Launch: `npm start`

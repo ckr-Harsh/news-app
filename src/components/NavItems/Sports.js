@@ -1,11 +1,9 @@
 import React, { useContext } from 'react';
 import { RealData } from '../ContextPage';
 import Box from '../Box'
-import './Headlines.css'
-import '../Box.css'
 
 function Sports() {
-    const [data,setData]=useContext(RealData);
+    const [data] = useContext(RealData);
 
     return (
        <> 

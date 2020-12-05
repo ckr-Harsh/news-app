@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import MenuIcon from '@material-ui/icons/Menu';
 import MenuOpenIcon from '@material-ui/icons/MenuOpen';
-import './Navbar.css';
 import {NavLink} from 'react-router-dom';
 import { Category } from './ContextPage';
 
@@ -49,13 +48,13 @@ const Navbar = () => {
       <nav>
         <h1 className="logo">News App</h1>
         {isMobile ? (<MobileList style={{
-              width: '80%',
+              width: '100%',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
               alignItems: 'center',
               marginLeft: '85%',
-              marginBottom: '13px',
+              marginBottom: '13px'
         }} />
         ) :(
           <List style={{

@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme)=>({
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Button color={'primary'} fullWidth className={classes.cta} href={props.url} target="_blank">
+      <Button color={'primary'} fullWidth className={classes.cta} href={props.url} target="_blank" rel="noreferrer">
           Find Out More <Mat.ChevronRightRounded />
         </Button>
       </CardActions>
