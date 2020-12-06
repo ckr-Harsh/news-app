@@ -11,17 +11,8 @@ import * as Mat from '@material-ui/icons';
 
 const useStyles = makeStyles((theme)=>({
   root: {
-    width: 350,
-    marginRight: 15,
-    [theme.breakpoints.up('xs')]:{
-      width:400,
-    },
-    [theme.breakpoints.up('sm')]:{
-      width:400,
-    },
-    [theme.breakpoints.up('md')]:{
-      width:340,
-    }
+    maxWidth: 350,
+    
   },
   cta: {
     marginTop: 24,
