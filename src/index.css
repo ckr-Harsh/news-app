@@ -52,6 +52,9 @@ a {
 }
 
 @media (max-width: 786px) {
+  .page__name {
+    margin: 5px 0px;
+  }
   .news-outputs {
     justify-content: center;
     align-items: center;

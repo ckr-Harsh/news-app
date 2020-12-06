@@ -12,9 +12,10 @@ Key tools used in this React project are:
 
 | Tool             | Description   |
 | :-------------:|--------------|
-| [React](http://facebook.github.io/react/index.html) | A JavaScript library for building user interfaces |
+| [React](http://facebook.github.io/react/index.html) | A JavaScript library for building user interfaces. |
 | [Material-UI](https://material-ui.com/) | React components for faster and easier web development. |
 | [Axios](https://github.com/axios/axios) | Promise based HTTP client for the browser and node.js |
+| [React-Router](https://github.com/ReactTraining/react-router) | For Dynamic, Client-Side routing. |
 
 ## Installation
 [node.js](http://nodejs.org/download/) is required to get ``npm``.
