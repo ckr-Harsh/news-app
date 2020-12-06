@@ -5,7 +5,7 @@ News App is a responsive [React](http://facebook.github.io/react/index.html) app
 ![screenshot](https://github.com/traptrick/news-app/blob/master/screenshot.PNG)
 
 ## Demo
-[Not Available Yet]()
+Is not possible because NEWSAPI only allow api calls locally. 
 
 ## Tools
 Key tools used in this React project are:
